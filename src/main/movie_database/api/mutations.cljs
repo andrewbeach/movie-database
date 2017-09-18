@@ -66,3 +66,8 @@
       (pushy/set-token! @r/history r/LOGIN-URI)))
   (remote [env] true))
 
+(defmutation inc-counter
+  "DEMO only"
+  [p]
+  (action [{:keys [state]}]
+          (swap! state update-in [:counter/count] inc)))
