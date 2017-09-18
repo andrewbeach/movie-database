@@ -39,7 +39,7 @@
     {:db/id :enemies
      :person-list/label "Enemies"
      :person-list/people my-enemies}]}
-  {:inspect-data true :hidden false})
+  {:inspect-data false})
 
 (defcard-fulcro Counter
   "# Counter"
